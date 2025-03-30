@@ -68,9 +68,6 @@ Follow these steps to install Terraform on Ubuntu:
     ```bash
     terraform --version  
     ```
-    
-
-![image1](images/image1.png)
 
 ---
 
@@ -101,9 +98,6 @@ Ansible simplifies configuration management and automation. To install it:
     ```bash
     ansible --version  
     ```
-    
-
-![image2](images/image2.png)
 
 ---
 
@@ -308,22 +302,35 @@ b. `terraform plan` : Review the plan to apply changes
 
 c. `terraform apply` : Apply the changes to provision infrastructur
 
-![image5](images/image5.png)
+<img width="947" alt="s7" src="https://github.com/user-attachments/assets/616a017c-3536-4435-90dd-a75dadd9c8a8" />
+
+output:
+
+<img width="954" alt="s8" src="https://github.com/user-attachments/assets/495a245c-fe09-4b53-8923-a39e6fa3e16e" />
 
 > You can see below that all instance , buckets ,dynamodb are running or created , which is created through Terraform :
 
 1. Instances :
     
-    ![image6](images/image6.png)
+   <img width="947" alt="s2" src="https://github.com/user-attachments/assets/bfb3f76f-85ec-4c9c-9e5e-665fced071b2" />
+
+    a. dev environment instances
+   <img width="955" alt="s6" src="https://github.com/user-attachments/assets/e37010a6-8aa0-4973-9e41-e0bd61755356" />
+
+    b. prd environment instances
+   <img width="959" alt="s3" src="https://github.com/user-attachments/assets/b73759fb-863e-44ab-8158-11aa57da3dca" />
+
+    c. stg environment instances
+   <img width="935" alt="s4" src="https://github.com/user-attachments/assets/c1d7ad75-4671-459a-b99a-bd3800b550e3" />
+
     
-2. Buckets :
+3. Buckets :
     
-    ![image7](images/image7.png)
+   <img width="941" alt="s3-bucket" src="https://github.com/user-attachments/assets/0a49727a-ad60-4ce4-98dd-1819c2c17db9" />
+
     
-3. DynamoDb tables:
-    
-    ![image8](images/image8.png)
-    
+4. DynamoDb tables:
+    <img width="943" alt="s9" src="https://github.com/user-attachments/assets/81fe3e6b-830d-487b-84ef-c933aa0a824b" />
 
 ---
 
@@ -658,10 +665,16 @@ This will execute the playbook using the updated **all(dev,stg,prod)** inventory
 ---
 
 ### **Step 7: Varify the all servers whether html page is visible or not (for all inventory like : dev,stg,prod):**
+dev: 
+<img width="938" alt="t4" src="https://github.com/user-attachments/assets/374377ad-5dc9-4d8e-8da6-f337319c9ccb" />
 
-![image11](images/image11.png)
+prd:
+<img width="873" alt="prd-t5" src="https://github.com/user-attachments/assets/6aa0f9af-332b-40b3-aa18-5ccb6b49122d" />
 
----
+stg:
+<img width="866" alt="stg t5" src="https://github.com/user-attachments/assets/cc980788-c4db-4e0f-bb7b-640119b6a243" />
+
+--
 
 # 9\. Final Directory structure for this project
 
