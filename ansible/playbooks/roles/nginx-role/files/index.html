@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Snehassanam</title>
+    <style>
+        /* General styling for both themes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: inherit;
+            text-align: center;
+        }
+
+        p,
+        ul {
+            line-height: 1.6;
+        }
+
+        /* Light Theme */
+        .light-theme {
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        .light-theme header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .light-theme .content {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .light-theme .theme-toggle {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Dark Theme */
+        .dark-theme {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        .dark-theme header {
+            background-color: #34495e;
+            border-bottom: 1px solid #2c3e50;
+            padding: 10px 0;
+        }
+
+        .dark-theme .content {
+            background-color: #34495e;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .dark-theme .theme-toggle {
+            background-color: #ecf0f1;
+            color: #333;
+        }
+
+        .theme-toggle {
+            cursor: pointer;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Styling for the contact info */
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #3498db;
+        }
+
+    </style>
+</head>
+
+<body class="light-theme">
+    <header>
+        <div class="container">
+            <button class="theme-toggle" onclick="toggleTheme()">🌙 Switch to Dark Mode</button>
+            <h1>About Me</h1>
+        </div>
+    </header>
+
+    <div class="container content">
+        <h2>👋 Hello!</h2>
+        <p>I am a computer science graduate student with 3 years of experience in application support engineering.</p>
+
+        <h2>💻 Here are my skills:</h2>
+        <ul>
+            <li><strong>Operating System:</strong> Linux</li>
+            <li><strong>Cloud Computing Platforms:</strong> AWS, Azure</li>
+            <li><strong>Database Management:</strong> MySQL</li>
+            <li><strong>Ticketing tools:</strong> Jira, ServiceNow, Remedy</li>
+            <li><strong>ITIL v4 Certified</strong></li>
+            <li><strong>Version Control System:</strong> Git, GitHub</li>
+            <li><strong>Scripting Language:</strong> Shell Scripting, Python</li>
+            <li><strong>Continuous Integration and Continuous Delivery (CI/CD):</strong> Jenkins</li>
+            <li><strong>Infrastructure as Code (IaC):</strong> Terraform</li>
+            <li><strong>Configuration Management:</strong> Ansible</li>
+            <li><strong>Containerization:</strong> Docker, Kubernetes</li>
+            <li><strong>Networking Fundamentals:</strong> TCP/IP, DNS, Load Balancing</li>
+        </ul>
+
+        <h2>✈️ Career Update</h2>
+        <p>Due to migration to Australia, I recently resigned from Cognizant (India) and am looking for a DevOps engineer role in the Sydney or Newcastle area. I have a valid work visa and I am available to work immediately.</p>
+
+        <div class="contact-info">
+            <h2>🤝 Let’s Connect!</h2>
+            <p>I am eager to connect with professionals and industry experts who share a passion for software engineering. If you have any opportunities or simply want to connect, feel free to email me at <a href="mailto:snehassanam@gmail.com">snehassanam@gmail.com</a>. I would be delighted to hear from you. Let’s work together and create something amazing!</p>
+        </div>
+    </div>
+
+    <script>
+        // Toggle theme between light and dark
+        function toggleTheme() {
+            const body = document.body;
+            const themeButton = document.querySelector('.theme-toggle');
+            
+            body.classList.toggle('dark-theme');
+            body.classList.toggle('light-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                themeButton.innerText = "🌙 Switch to Light Mode";
+            } else {
+                themeButton.innerText = "🌙 Switch to Dark Mode";
+            }
+        }
+    </script>
+</body>
+
+</html>

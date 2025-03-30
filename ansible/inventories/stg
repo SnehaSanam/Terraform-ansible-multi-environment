@@ -1,0 +1,7 @@
+[servers]
+server1 ansible_host=34.242.191.173
+server2 ansible_host=34.243.170.135
+[servers:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/snehasanam/terra-ansible-multi-env
+ansible_python_interpreter=/usr/bin/python3
