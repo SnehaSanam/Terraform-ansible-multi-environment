@@ -20,7 +20,8 @@ The project involves:
     
 ## Project Diagram : 
 
-![Project-diagram](images/Project-design.gif)
+![Project-diagram]![image](https://github.com/user-attachments/assets/282fe5e0-baa5-4537-8973-c41eb34d0562)
+
 
 
 ---
